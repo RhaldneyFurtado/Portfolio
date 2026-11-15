@@ -1,0 +1,79 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: sans-serif;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #0b0f19;
+  color: #f8fafc;
+}
+
+header {
+  background-color: #0b0f19; /* Garante o fundo escuro no topo */
+  border-bottom: 1px solid #1e293b; /* Uma linha discreta separando o menu */
+  position: sticky;
+  top: 0;
+  z-index: 1000; /* Garante que a navbar fica sempre por cima ao rolar a página */
+}
+
+header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 8%; /* Espaçamento lateral elegante */
+}
+
+.logo {
+  color: #38bdf8;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.nav-links {
+  display: flex;
+  gap: 24px;
+  list-style: none;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #cbd5e1;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #38bdf8;
+}
+
+/* ==============================
+   RESPONSIVIDADE PARA CELULARES (Mobile)
+   ============================== */
+@media (max-width: 768px) {
+  header nav {
+    flex-direction: column; /* Empilha o logotipo em cima e os links embaixo */
+    gap: 14px;
+    padding: 15px 5%;
+    text-align: center;
+  }
+
+  .logo {
+    font-size: 1.05rem; /* Ajusta o tamanho do logo para não estourar telas pequenas */
+  }
+
+  .nav-links {
+    gap: 16px; /* Aproxima um pouco mais os links para caberem confortavelmente */
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .nav-links a {
+    font-size: 0.9rem; /* Letra ligeiramente mais compacta no mobile */
+  }
+}

@@ -1,0 +1,105 @@
+.about {
+  min-height: calc(100vh - 70px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 50px 8%;
+  scroll-margin-top: 20px;
+}
+
+.about-container {
+  max-width: 1050px;
+  margin: 0 auto;
+}
+
+.about-tag {
+  display: block;
+  font-size: 0.9rem;
+  font-weight: 700;
+  letter-spacing: 0.15em;
+  color: #38bdf8;
+  text-transform: uppercase;
+  margin-bottom: 2px;
+}
+
+.about-titulo {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #f8fafc;
+  line-height: 1.2;
+  margin-bottom: 8px;
+}
+
+.about-texto p {
+  color: #94a3b8;
+  font-size: 0.88rem;
+  line-height: 1.4;
+  margin-bottom: 6px;
+}
+
+.formacao {
+  margin-top: 12px;
+  margin-bottom: 10px;
+}
+
+.formacao h3 {
+  display: block;
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.15em;
+  color: #38bdf8;
+  text-transform: uppercase;
+  margin-bottom: 2px;
+}
+
+.formacao p {
+  color: #cbd5e1;
+  font-size: 0.88rem;
+}
+
+/* ==============================
+   AJUSTE DE ESPAÇAMENTO DOS PILARES
+   ============================== */
+.pilares-titulo {
+  text-align: left;
+  /* Aumentamos a margem de baixo para afastar bem o título dos cards */
+  margin-bottom: 16px;
+  color: #38bdf8;
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+
+.about-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 12px;
+}
+
+.about-card {
+  background: rgba(15, 23, 42, 0.6);
+  border: 1px solid rgba(56, 189, 248, 0.2);
+  border-radius: 10px;
+  padding: 10px 14px;
+  text-align: center;
+  transition:
+    transform 0.3s ease,
+    border-color 0.3s ease;
+}
+
+.about-card:hover {
+  transform: translateY(-4px);
+  border-color: rgba(56, 189, 248, 0.5);
+}
+
+.about-card h3 {
+  color: #f8fafc;
+  font-size: 0.95rem;
+  margin-bottom: 2px;
+}
+
+.about-card p {
+  color: #94a3b8;
+  font-size: 0.8rem;
+  line-height: 1.3;
+  margin: 0;
+}

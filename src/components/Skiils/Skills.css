@@ -1,0 +1,120 @@
+.skills {
+  min-height: calc(100vh - 70px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 50px 8%;
+  background-color: #0b0f19;
+  scroll-margin-top: 20px;
+}
+
+.skills h2 {
+  font-size: 2.1rem;
+  color: #f8fafc;
+  text-align: center;
+  margin-bottom: 8px;
+}
+
+.skills-sub {
+  color: #94a3b8;
+  text-align: center;
+  margin-bottom: 35px;
+  font-size: 1.05rem;
+}
+
+.skills-container-dominios {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 25px;
+  max-width: 1150px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.dominio-card {
+  background: rgba(15, 23, 42, 0.7);
+  border: 1px solid rgba(56, 189, 248, 0.2);
+  border-radius: 16px;
+  padding: 24px;
+}
+
+.dominio-card h3 {
+  color: #f8fafc;
+  font-size: 1.15rem;
+  margin-bottom: 16px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  padding-bottom: 10px;
+}
+
+.skills-grid-interno {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 14px;
+}
+
+.skill-item {
+  background: rgba(11, 15, 25, 0.5);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  border-radius: 10px;
+  padding: 16px 10px; /* Caixas confortáveis e com bom espaço */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  transition:
+    transform 0.3s ease,
+    border-color 0.3s ease;
+}
+
+.skill-item:hover {
+  transform: translateY(-4px);
+  border-color: #38bdf8;
+}
+
+.skill-item span {
+  color: #94a3b8;
+  font-size: 0.85rem;
+  font-weight: 500;
+}
+
+/* Ícones grandes e destacados novamente */
+.skill-icon {
+  font-size: 2.2rem;
+}
+
+.skills-grid-interno i.skill-icon {
+  font-size: 2.2rem;
+}
+
+/* Cores dos ícones */
+.skill-icon.html {
+  color: #e34f26;
+}
+.skill-icon.css {
+  color: #1572b6;
+}
+.skill-icon.js {
+  color: #f7df1e;
+}
+.skill-icon.react {
+  color: #61dafb;
+}
+.skill-icon.node {
+  color: #339933;
+}
+.skill-icon.python {
+  color: #3776ab;
+}
+.skill-icon.git {
+  color: #f05032;
+}
+.skill-icon.github {
+  color: #f8fafc;
+}
+.skill-icon.firebase {
+  color: #ffca28;
+}
+.skill-icon.windows {
+  color: #0078d4;
+}

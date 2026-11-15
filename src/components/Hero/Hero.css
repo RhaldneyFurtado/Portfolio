@@ -1,0 +1,103 @@
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 85vh;
+  padding: 0 8%;
+  gap: 40px;
+}
+
+@media (max-width: 900px) {
+  .hero {
+    flex-direction: column-reverse;
+    padding: 40px 8%;
+    text-align: left;
+  }
+}
+
+.hero-texto {
+  max-width: 600px;
+}
+
+.hero h1 {
+  margin: 1rem 0;
+  color: #f0fbff;
+  letter-spacing: -0.02em;
+  line-height: 1.06;
+  text-wrap: balance;
+  text-wrap-mode: initial;
+  text-wrap-style: balance;
+}
+
+.hero h2 {
+  color: #94a3b8;
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  color: #94a3b8;
+  line-height: 1.6;
+  margin-bottom: 32px;
+}
+
+.hero-botoes {
+  display: flex;
+  gap: 16px;
+  margin-top: 24px;
+  white-space: nowrap;
+}
+
+.hero-botoes a {
+  display: inline-block;
+  padding: 10px 24px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: transform 0.3s ease;
+}
+
+.hero-botoes a:hover {
+  transform: translateY(-5px);
+}
+
+.btn-primario {
+  background-color: #38bdf8;
+  color: #0b0f19;
+}
+
+.btn-secundario {
+  background: transparent;
+  color: #f8fafc;
+  border: 2px solid #38bdf8;
+}
+
+.badge-local {
+  width: fit-content;
+  color: #38bdf8;
+  background-color: rgba(56, 189, 248, 0.1);
+  border: 1px solid rgba(56, 189, 248, 0.1);
+  padding: 0.48rem 0.74rem;
+  border-radius: 999px;
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  margin-bottom: 30px;
+}
+
+.hero-imagem {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+}
+
+.hero-imagem img {
+  width: 342px;
+  height: 342px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: 30%;
+  border: 10px solid #38bdf8;
+  box-shadow: 0 0 30px rgba(56, 189, 248, 0.3);
+}

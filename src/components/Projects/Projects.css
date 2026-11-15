@@ -1,0 +1,143 @@
+/* ==============================
+   SEÇÃO DE PROJETOS
+   ============================== */
+.projects {
+  min-height: calc(100vh - 70px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 40px 6%;
+  background-color: #0b0f19;
+  scroll-margin-top: 20px;
+}
+
+.projects h2 {
+  font-size: 2.25rem;
+  font-weight: 700;
+  color: #f3f4f6;
+  text-align: center;
+  margin-bottom: 0.75rem;
+}
+
+.projects-sub {
+  text-align: center;
+  color: #9ca3af;
+  font-size: 1.1rem;
+  margin-bottom: 2.5rem;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* ==============================
+   GRID DOS CARDS
+   ============================== */
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.project-card {
+  background-color: #1e1e2e;
+  border: 1px solid #2a2a3c;
+  border-radius: 12px;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition:
+    transform 0.3s ease,
+    border-color 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+  border-color: #38bdf8;
+  box-shadow: 0 10px 25px -5px rgba(56, 189, 248, 0.15);
+}
+
+/* ==============================
+   CONTEÚDO DO CARD
+   ============================== */
+.project-content h3 {
+  font-size: 1.35rem;
+  color: #ffffff;
+  margin-bottom: 0.75rem;
+  font-weight: 600;
+}
+
+.project-desc {
+  color: #9ca3af;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+}
+
+/* ==============================
+   TAGS DE TECNOLOGIAS
+   ============================== */
+.project-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 2rem;
+}
+
+.tech-tag {
+  background-color: #2a2a3c;
+  color: #38bdf8;
+  font-size: 0.8rem;
+  font-weight: 500;
+  padding: 0.35rem 0.75rem;
+  border-radius: 6px;
+}
+
+/* ==============================
+   BOTÕES DE LINKS
+   ============================== */
+.project-links {
+  display: flex;
+  gap: 1rem;
+  border-top: 1px solid #2a2a3c;
+  padding-top: 1.25rem;
+}
+
+.btn-project {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 1rem;
+  border-radius: 0.875rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+  text-decoration: none;
+  transition:
+    background-color 0.2s ease,
+    color 0.2s ease;
+}
+
+.btn-code {
+  background-color: transparent;
+  color: #d1d5db;
+  border: 1px solid #374151;
+}
+
+.btn-code:hover {
+  background-color: #374151;
+  color: #ffffff;
+}
+
+.btn-live {
+  background-color: #38bdf8;
+  color: #0b0f19;
+  font-weight: 600;
+}
+
+.btn-live:hover {
+  background-color: #0ea5e9;
+}
