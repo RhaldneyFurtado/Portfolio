@@ -23,9 +23,9 @@ const Career = () => {
               Conferência física e sistêmica de cargas utilizando coletores de
               dados e sistema WMS-(Warenhouse Management System), validação e
               contagem de estoque e picking, organização para iventários
-              oficiais, rotinas administrativas com verificões rigorosas de
+              oficiais, rotinas administrativas com verificações rigorosas de
               documentos fiscais (NF-e e CT-e), lançamento de NF's no sistema
-              para recebimento apoio aos motoristas e garantia de acuracidade
+              para recebimento, apoio aos motoristas e garantia de acuracidade
               nas operações de recebimento e expedição. Possuo NR12, NR18 e NR35
             </p>
             <p className="timeline-highlight">
