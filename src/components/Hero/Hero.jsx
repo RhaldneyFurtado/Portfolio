@@ -31,6 +31,13 @@ const Hero = () => {
           >
             GitHub
           </a>
+          <a
+            href="/Curriculo_Rhaldney_Furtado.pdf"
+            download="Curriculo_Rhaldney_Furtado.pdf"
+            className="btn-secundario"
+          >
+            Baixar Currículo
+          </a>
         </div>
       </div>
 
