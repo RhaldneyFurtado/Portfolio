@@ -1,0 +1,151 @@
+/* ==========================================================================
+   ESTILOS DO FOOTER - ALINHADO AO TEMA DO PORTFÓLIO
+   ========================================================================== */
+
+.footer {
+  width: 100%;
+  padding: 60px 20px 30px 20px;
+  background-color: var(--bg-secondary, #1e293b);
+  color: var(--text-primary, #f8fafc);
+  border-top: 1px solid var(--border-color, #334155);
+  box-sizing: border-box;
+}
+
+.footer-container {
+  max-width: 900px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+/* Cabeçalho */
+.footer-header {
+  margin-bottom: 35px;
+}
+
+.footer-tag {
+  display: inline-block;
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: var(--accent-color, #3b82f6);
+  letter-spacing: 1.5px;
+  margin-bottom: 8px;
+  text-transform: uppercase;
+}
+
+.footer-titulo {
+  font-size: clamp(1.4rem, 2.5vw, 1.8rem);
+  font-weight: 700;
+  color: var(--text-primary, #f8fafc);
+  margin-bottom: 8px;
+}
+
+.footer-subtitulo {
+  font-size: 0.95rem;
+  color: var(--text-secondary, #94a3b8);
+  max-width: 500px;
+  margin: 0 auto;
+  line-height: 1.5;
+}
+
+/* Grade de Cards de Contato */
+.footer-contatos {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  flex-wrap: wrap;
+  gap: 16px;
+  width: 100%;
+  margin-bottom: 45px;
+}
+
+.footer-card {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 14px 22px;
+  min-width: 210px;
+  background-color: var(--bg-primary, #0f172a);
+  border: 1px solid var(--border-color, #334155);
+  border-radius: 8px;
+  text-decoration: none;
+  color: var(--text-primary, #f8fafc);
+  transition:
+    transform 0.2s ease,
+    border-color 0.2s ease,
+    box-shadow 0.2s ease;
+  box-sizing: border-box;
+}
+
+.footer-card:hover {
+  transform: translateY(-3px);
+}
+
+.footer-icon {
+  font-size: 1.6rem;
+  flex-shrink: 0;
+  transition: color 0.2s ease;
+}
+
+.footer-card-text {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+.footer-card-text strong {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--text-primary, #f8fafc);
+}
+
+.footer-card-text span {
+  font-size: 0.8rem;
+  color: var(--text-secondary, #94a3b8);
+}
+
+/* Cores oficiais no hover e ícones */
+.footer-card.whatsapp .footer-icon {
+  color: #25d366;
+}
+.footer-card.whatsapp:hover {
+  border-color: #25d366;
+}
+
+.footer-card.email .footer-icon {
+  color: #ea4335;
+}
+.footer-card.email:hover {
+  border-color: #ea4335;
+}
+
+.footer-card.linkedin .footer-icon {
+  color: #0a66c2;
+}
+.footer-card.linkedin:hover {
+  border-color: #0a66c2;
+}
+
+/* Linha de Copyright */
+.footer-bottom {
+  width: 100%;
+  padding-top: 20px;
+  border-top: 1px solid var(--border-color, #334155);
+  font-size: 0.82rem;
+  color: var(--text-secondary, #94a3b8);
+}
+
+/* Responsividade para celulares */
+@media (max-width: 680px) {
+  .footer-contatos {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-card {
+    width: 100%;
+    max-width: 320px;
+  }
+}

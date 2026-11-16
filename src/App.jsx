@@ -5,7 +5,8 @@ import About from "./components/About/About";
 import Skills from "./components/Skills/Skills";
 import SoftSkills from "./components/Soft-skills/Soft-skills";
 import Projects from "./components/Projects/Projects";
-import Career from "./components/Career/Career"; // Importada aqui no final
+import Career from "./components/Career/Career";
+import Footer from "./components/Footer/Footer";
 
 function App() {
   return (
@@ -16,7 +17,8 @@ function App() {
       <Skills />
       <SoftSkills />
       <Projects />
-      <Career /> {/* Posicionada como a última aba antes do fim da página */}
+      <Career />
+      <Footer />
     </>
   );
 }
