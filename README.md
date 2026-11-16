@@ -1,16 +1,23 @@
-# React + Vite
+# Portfólio Profissional | Rhaldney Furtado
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Portfólio web desenvolvido em **React** e **Vite**, estruturado com CSS modularizado e design focado em experiência do usuário (UX/UI), apresentando minha transição de carreira para a tecnologia, projetos práticos e trajetória profissional.
 
-Currently, two official plugins are available:
+## Tecnologias Utilizadas
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+* **React** (Componentização e Estados)
+* **Vite** (Build tool e ambiente de desenvolvimento rápido)
+* **CSS3** (Estilização modular e responsiva)
+* **React Icons** (Biblioteca de ícones)
+* **JavaScript (ES6+)**
 
-## React Compiler
+## Seções do Portfólio
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+* **Apresentação (Hero):** Introdução com chamada para ação e links rápidos.
+* **Sobre mim:** Transição da logística para o desenvolvimento de software e formação acadêmica (ADS na Uninter).
+* **Hard Skills:** Tecnologias e ferramentas dominadas.
+* **Soft Skills:** Competências comportamentais em carrossel dinâmico e opção de visualização em grade.
+* **Projetos em Destaque:** Aplicações reais desenvolvidas (Lista de Compras PWA, Site de Cafeteria e Gestor em Python).
+* **Car trajetória / Experiência:** Histórico profissional e acadêmico.
 
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+Desenvolvido por **Rhaldney Furtado**.
