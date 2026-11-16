@@ -16,16 +16,17 @@ const Career = () => {
           <div className="timeline-item">
             <div className="timeline-header">
               <h3>JSL S/A</h3>
-              <span className="timeline-periodo">2019 – Atual</span>
+              <span className="timeline-periodo">2019 – Atualmente</span>
             </div>
             <h4>Conferente de Carga e Descarga</h4>
             <p>
               Conferência física e sistêmica de cargas utilizando coletores de
-              dados e sistema WMS-(Warenhouse Management System), rotinas
-              administrativas com verificões rigorosas de documentos fiscais
-              (NF-e e CT-e), lançamento de NF's no sistema para recebimento
-              apoio aos motoristas e garantia de acuracidade nas operações de
-              recebimento e expedição.
+              dados e sistema WMS-(Warenhouse Management System), validação e
+              contagem de estoque e picking, organização para iventários
+              oficiais, rotinas administrativas com verificões rigorosas de
+              documentos fiscais (NF-e e CT-e), lançamento de NF's no sistema
+              para recebimento apoio aos motoristas e garantia de acuracidade
+              nas operações de recebimento e expedição. Possuo NR12, NR18 e NR35
             </p>
             <p className="timeline-highlight">
               <strong>Liderança Situacional:</strong> Atuação com coordenação em
@@ -43,9 +44,9 @@ const Career = () => {
             </div>
             <h4>Armazenista</h4>
             <p>
-              Separação, expedição e organização física de estoque integrada ao
-              sistema WMS, com rastreabilidade de lotes e aplicação rigorosa das
-              metodologias FIFO, FEFO, LIFO e Curva ABC.
+              Separação, expedição e decargas de veículos, organização física de
+              estoque integrada ao sistema WMS, com rastreabilidade de lotes e
+              aplicação rigorosa das metodologias FIFO, FEFO, LIFO e Curva ABC.
             </p>
           </div>
         </div>
