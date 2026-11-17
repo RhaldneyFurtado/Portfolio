@@ -1,6 +1,4 @@
-/* ==============================
-   SEÇÃO DE PROJETOS
-   ============================== */
+/* SEÇÃO DE PROJETOS */
 .projects {
   min-height: calc(100vh - 70px);
   display: flex;
@@ -12,7 +10,7 @@
 }
 
 .projects h2 {
-  font-size: 2.25rem;
+  font-size: clamp(1.8rem, 4vw, 2.25rem); /* Tamanho fluido para o título */
   font-weight: 700;
   color: #f3f4f6;
   text-align: center;
@@ -22,20 +20,18 @@
 .projects-sub {
   text-align: center;
   color: #9ca3af;
-  font-size: 1.1rem;
+  font-size: 1rem;
   margin-bottom: 2.5rem;
   max-width: 600px;
   margin-left: auto;
   margin-right: auto;
 }
 
-/* ==============================
-   GRID DOS CARDS
-   ============================== */
+/* GRID DOS CARDS */
 .projects-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-  gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); /* Reduzido o mínimo para encaixar melhor em telas menores */
+  gap: 1.5rem;
   max-width: 1200px;
   margin: 0 auto;
   width: 100%;
@@ -61,11 +57,9 @@
   box-shadow: 0 10px 25px -5px rgba(56, 189, 248, 0.15);
 }
 
-/* ==============================
-   CONTEÚDO DO CARD
-   ============================== */
+/* CONTEÚDO DO CARD */
 .project-content h3 {
-  font-size: 1.35rem;
+  font-size: 1.25rem;
   color: #ffffff;
   margin-bottom: 0.75rem;
   font-weight: 600;
@@ -73,33 +67,29 @@
 
 .project-desc {
   color: #9ca3af;
-  font-size: 0.95rem;
+  font-size: 0.9rem;
   line-height: 1.6;
   margin-bottom: 1.5rem;
 }
 
-/* ==============================
-   TAGS DE TECNOLOGIAS
-   ============================== */
+/* TAGS DE TECNOLOGIAS */
 .project-tags {
   display: flex;
   flex-wrap: wrap;
   gap: 0.5rem;
-  margin-bottom: 2rem;
+  margin-bottom: 1.5rem;
 }
 
 .tech-tag {
   background-color: #2a2a3c;
   color: #38bdf8;
-  font-size: 0.8rem;
+  font-size: 0.75rem;
   font-weight: 500;
-  padding: 0.35rem 0.75rem;
+  padding: 0.3rem 0.6rem;
   border-radius: 6px;
 }
 
-/* ==============================
-   BOTÕES DE LINKS
-   ============================== */
+/* BOTÕES DE LINKS */
 .project-links {
   display: flex;
   gap: 1rem;
@@ -110,15 +100,17 @@
 .btn-project {
   display: inline-flex;
   align-items: center;
+  justify-content: center;
   gap: 0.5rem;
   padding: 0.5rem 1rem;
   border-radius: 0.875rem;
-  font-size: 0.875rem;
+  font-size: 0.85rem;
   font-weight: 500;
   text-decoration: none;
   transition:
     background-color 0.2s ease,
     color 0.2s ease;
+  flex: 1; /* Faz os botões dividirem o espaço uniformemente no mobile, evitando que fiquem apertados */
 }
 
 .btn-code {
@@ -140,4 +132,22 @@
 
 .btn-live:hover {
   background-color: #0ea5e9;
+}
+
+
+/* RESPONSIVIDADE PARA CELULAR */
+@media (max-width: 768px) {
+  .projects {
+    padding: 30px 4%;
+  }
+
+  .project-card {
+    padding: 1.25rem; /* Reduz o padding interno do card para economizar espaço valioso no celular */
+  }
+
+  .project-links {
+    flex-direction: row; /* Mantém lado a lado, mas com flex: 1 nos botões eles ajustam perfeitamente */
+    gap: 0.75rem;
+    padding-top: 1rem;
+  }
 }
