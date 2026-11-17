@@ -1,3 +1,4 @@
+/* ESTILO BASE (DESKTOP E TELAS MAIORES) */
 .hero {
   display: flex;
   align-items: center;
@@ -7,16 +8,9 @@
   gap: 40px;
 }
 
-@media (max-width: 900px) {
-  .hero {
-    flex-direction: column-reverse;
-    padding: 40px 8%;
-    text-align: left;
-  }
-}
-
 .hero-texto {
   max-width: 600px;
+  width: 100%;
 }
 
 .hero h1 {
@@ -24,9 +18,8 @@
   color: #f0fbff;
   letter-spacing: -0.02em;
   line-height: 1.06;
+  font-size: clamp(2.2rem, 4vw, 3.5rem);
   text-wrap: balance;
-  text-wrap-mode: initial;
-  text-wrap-style: balance;
 }
 
 .hero h2 {
@@ -39,22 +32,25 @@
   color: #94a3b8;
   line-height: 1.6;
   margin-bottom: 32px;
+  font-size: 1rem;
 }
 
 .hero-botoes {
   display: flex;
+  flex-wrap: wrap;
   gap: 16px;
   margin-top: 24px;
-  white-space: nowrap;
 }
 
 .hero-botoes a {
   display: inline-block;
-  padding: 10px 24px;
+  padding: 12px 24px;
   border-radius: 8px;
   text-decoration: none;
   font-weight: 600;
   transition: transform 0.3s ease;
+  font-size: 0.95rem;
+  text-align: center;
 }
 
 .hero-botoes a:hover {
@@ -93,11 +89,51 @@
 }
 
 .hero-imagem img {
-  width: 342px;
-  height: 342px;
+  width: 320px;
+  height: 320px;
   border-radius: 50%;
   object-fit: cover;
   object-position: 30%;
   border: 10px solid #38bdf8;
   box-shadow: 0 0 30px rgba(56, 189, 248, 0.3);
+}
+
+
+/* RESPONSIVIDADE PARA CELULARES E TABLETS
+   (Telas menores que 900px) */
+@media (max-width: 900px) {
+  .hero {
+    flex-direction: column-reverse;
+    padding: 40px 5%;
+    text-align: center;
+    min-height: auto;
+    gap: 30px;
+  }
+
+  .hero-texto {
+    max-width: 100%;
+  }
+
+  .badge-local {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .hero h2 {
+    font-size: 1.2rem;
+  }
+
+  .hero p {
+    font-size: 0.95rem;
+  }
+
+  .hero-botoes {
+    justify-content: center;
+  }
+
+  .hero-imagem img {
+    width: 250px;
+    height: 250px;
+    border-width: 6px;
+  }
 }
