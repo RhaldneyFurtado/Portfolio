@@ -1,3 +1,4 @@
+
 .header-textos {
   display: flex;
   flex-direction: column;
@@ -88,6 +89,8 @@
   transition:
     transform 0.3s ease,
     border-color 0.3s ease;
+  width: 100%; /* Garante que o card ocupe o espaço correto */
+  box-sizing: border-box;
 }
 
 .carousel-card {
@@ -161,31 +164,47 @@
   transform: scale(1.2);
 }
 
-/* Responsividade para tablets */
+/* Responsividade para tablets*/
 @media (max-width: 900px) {
   .carousel-card {
     min-width: calc(50% - 10px);
   }
 }
 
-/* Responsividade para telemóveis (Ajuste principal da rolagem) */
+/* Responsividade para telemóvel */
 @media (max-width: 600px) {
-  /* No telemóvel, cada card ganha 100% de largura da tela visível */
-  .carousel-card {
-    min-width: 100%;
+  /* Transforma o container num carrossel nativo rolável por toque (swipe) */
+  .carousel-track-container {
+    overflow-x: auto;
+    overflow-y: hidden;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+    padding-bottom: 10px;
   }
 
-  /* Oculta as setas laterais para ganhar espaço horizontal no telemóvel */
+  /* Desativa a transição do transform via JS para não conflitar com o scroll nativo do dedo */
+  .carousel-track {
+    transition: none;
+    display: flex;
+    gap: 16px;
+  }
+
+  /* Cada card ocupa quase toda a largura da tela, com uma bordinha visível do próximo */
+  .carousel-card {
+    min-width: 85%;
+    scroll-snap-align: center;
+  }
+
+  /* Oculta as setas laterais no telemóvel para otimizar o espaço */
   .carousel-btn {
     display: none;
   }
 
-  /* Organiza o cabeçalho empilhado se necessário */
   .soft-skills-header {
     align-items: flex-start;
   }
 
-  /* Removemos o translateY grande no telemóvel para evitar que o texto invada a secção superior */
   .header-textos {
     transform: translateY(0);
   }
